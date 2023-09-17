@@ -14,7 +14,7 @@ const page = () => {
   }
   if (session.status === "authenticated") {
     return (
-      <div>
+      <div className="py-2 lg:px-10 lg:py-10">
         <Dashboard />
       </div>
     );

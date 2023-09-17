@@ -18,12 +18,12 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center py-2 rounded  ">
+      <div className="max-w-[90%] m-auto md:min-w-[100%]  flex justify-between px-5 items-center py-2 rounded  ">
         <h1 className="text-2xl font-bold">Dashboard</h1>
-        <div id="user" className="flex items-center">
+        <div id="user" className=" flex items-center">
           <input
             placeholder="search"
-            className="mx-2 rounded-md px-2 py-1 border "
+            className="hidden md:block mx-2 rounded-md px-2 py-1 border "
           />
           <BsBell className="w-5 h-5 mx-2 " />
           <Image

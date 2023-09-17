@@ -7,10 +7,10 @@ import Image from "next/image";
 
 const Cards = () => {
   return (
-    <div className="flex justify-between mt-10 py-2 px-2" >
+    <div className=" flex flex-col md:flex-row justify-between items-center mt-10 py-2 px-2" >
       <div id="first-box" className="card ">
         <Image src={revenue} width={35} height={35} id="card-icon" alt="Card" />
-        <div className="mt-2">
+        <div className="mt-2 ">
           <p className="text-sm">Total Revenues</p>
           <div className="flex justify-between mt-1">
             <h2 className="text-xl font-bold">$ 2,129,430</h2>
@@ -20,7 +20,7 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      <div id="second-box" className="card">
+      <div id="second-box" className="card ">
         <Image
           src={transaction}
           width={35}

@@ -2,7 +2,7 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="flex flex-col bg-[#4285F4] py-10 px-12  rounded-xl text-white h-full justify-between min-w-[17%]">
+    <div className="hidden  lg:flex lg:flex-col bg-[#4285F4] py-10 px-12  rounded-xl text-white h-full justify-between min-w-[17%]">
       {/* left navBar */}
       <div className=" flex flex-col  justify-center">
         <h1 className="text-3xl font-bold ">Board.</h1>

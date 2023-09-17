@@ -16,5 +16,5 @@ body {
 }
 
 .card {
-    @apply min-w-[270px] rounded-2xl px-5 py-4 drop-shadow-xl border-[#E0E0E0] border hover:bg-sky-200 border
+    @apply bg-white min-w-[80%] md:min-w-[23%]  xl:min-w-[250px]  mb-5 md:ml-2 rounded-2xl px-5 py-4 drop-shadow-xl border-[#E0E0E0] border-2 hover:bg-sky-200 
 }
