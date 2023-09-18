@@ -1,52 +1,44 @@
 import bg from "../../public/bg.png";
 
 import React from "react";
-import {
-    BsGithub,
-    BsDiscord,
-    BsTwitter,
-    BsLinkedin,
-    
-  } from "react-icons/bs";
-
+import { BsGithub, BsDiscord, BsTwitter, BsLinkedin } from "react-icons/bs";
 
 import { FcGoogle } from "react-icons/fc";
-import { BsGoogle, BsApple } from "react-icons/bs";
+import { BsApple } from "react-icons/bs";
 import Image from "next/image";
 import { signIn } from "next-auth/react";
 
 const socials = [
-    {
-      id: 1,
-      icon: <BsGithub className="text-white w-10 h-10" />,
-      title: "Gihtub",
-    },
-    {
-      id: 2,
-      icon: <BsDiscord className="text-white w-10 h-10" />,
-      title: "Discord",
-    },
-    {
-      id: 3,
-      icon: <BsTwitter className="text-white w-10 h-10" />,
-      title: "Twitter",
-    },
-    {
-      id: 4,
-      icon: <BsLinkedin className="text-white w-10 h-10" />,
-      title: "LinkedIn",
-    },
-  ];
+  {
+    id: 1,
+    icon: <BsGithub className="text-white w-10 h-10" />,
+    title: "Gihtub",
+  },
+  {
+    id: 2,
+    icon: <BsDiscord className="text-white w-10 h-10" />,
+    title: "Discord",
+  },
+  {
+    id: 3,
+    icon: <BsTwitter className="text-white w-10 h-10" />,
+    title: "Twitter",
+  },
+  {
+    id: 4,
+    icon: <BsLinkedin className="text-white w-10 h-10" />,
+    title: "LinkedIn",
+  },
+];
 
 const Singin = () => {
-
-    const socialArray = socials.map((items) => {
-        return (
-          <div key={items.id} className="px-5 cursor-pointer">
-            {items.icon}
-          </div>
-        );
-      });
+  const socialArray = socials.map((items) => {
+    return (
+      <div key={items.id} className="px-5 cursor-pointer">
+        {items.icon}
+      </div>
+    );
+  });
 
   return (
     <div className="flex h-[100vh] bg-[#F8FAFF] ">
@@ -63,14 +55,14 @@ const Singin = () => {
           <div className="flex ">{socialArray}</div>
         </div>
       </div>
-      <div className="flex flex-col  md:min-w-[50%] px-10 items-start justify-center">
+      <div className="flex flex-col  md:min-w-[50%] px-10 m-auto items-start justify-center">
         <div>
           <h1 className="text-4xl font-bold my-2 font-montserrat  ">Sign In</h1>
           <p className="my-2 font-lato">Sign in to your account</p>
         </div>
 
         {/* Quick Sign In */}
-        <div className="flex mt-3">
+        <div className="flex  mt-3">
           <div>
             <button
               type="button"
@@ -114,7 +106,7 @@ const Singin = () => {
             <button
               type="button"
               onClick={() => {
-                alert('Sign in with Google button')
+                alert("Sign in with Google button");
               }}
               className="w-full py-2 bg-[#4285F4] rounded-lg text-white font-semibold font-montserrat"
             >

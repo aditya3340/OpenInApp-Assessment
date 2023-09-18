@@ -3,29 +3,16 @@ import React, { useCallback, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
 const UserAdd = ({ handleClick }) => {
+  
+  
   const [nextForm, setNextForm] = useState(false);
-
-  const person = useUser();
-
-  // const [form, setForm] = useState({
-  //   name: "",
-  //   email: "",
-  //   phone: "",
-  //   instagramLink: "",
-  //   youtubeLink: "",
-  // });
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [insta, setInsta] = useState("");
   const [youtube, setYoutube] = useState("");
 
-  // const handleForm = (e) => {
-  //   setForm((prev) => {
-  //     return { ...prev, [e.target.name]: e.target.value };
-  //   });
-  // };
+  const person = useUser();
 
   const handleSubmit = useCallback(() => {
     person.addName(name);

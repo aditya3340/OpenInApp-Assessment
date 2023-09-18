@@ -5,10 +5,12 @@ import { BsBell } from "react-icons/bs";
 import { signOut, useSession } from "next-auth/react";
 
 const NavBar = () => {
-  const session = useSession();
-  const [image, setImage] = useState("");
 
+  const [image, setImage] = useState("");
   const [flage, setFlage] = useState(false);
+
+  const session = useSession();
+  
 
   useEffect(() => {
     if (session.status == "authenticated") {

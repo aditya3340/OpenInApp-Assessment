@@ -7,8 +7,6 @@ import { AiOutlineYoutube } from "react-icons/ai";
 const AddedUser = () => {
   const user = useUser();
 
-  console.log(user);
-
   return (
     <div className="mt-5 mx-9 min-h-[200px] lg:min-h-[87%] rounded-2xl flex flex-col  border-2 drop-shadow py-10 px-10">
       <div className=" flex flex-col lg:justify-between lg:items-between h-[200px]">

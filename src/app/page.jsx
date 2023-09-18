@@ -9,9 +9,6 @@ import { BeatLoader } from "react-spinners";
 const page = () => {
   const session = useSession();
 
-
- 
-
   if (session.status === "loading") {
     return (
       <div className="flex  h-[100vh] justify-center items-center">

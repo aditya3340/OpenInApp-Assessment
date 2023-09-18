@@ -7,10 +7,11 @@ import AddedUser from "./AddedUser";
 
 
 const Addprofile = () => {
-  const user = useUser();
-  console.log(user);
+
   const [click, setClick] = useState(false);
 
+  const user = useUser();
+ 
   const handleClickEvent = () => {
     setClick((prev) => !prev);
   };

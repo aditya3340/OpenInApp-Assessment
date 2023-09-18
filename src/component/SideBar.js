@@ -12,26 +12,25 @@ const SideBar = () => {
         <h1 className="text-3xl font-bold ">Board.</h1>
         <div className="mt-10 text-md dash-nav w-full">
           <ul className="flex items-center my-2 ">
-            <AiOutlinePieChart className="w-6 h-6 mr-4 "/>
+            <AiOutlinePieChart className="w-6 h-6 mr-4 " />
             <h1>Dashboard</h1>
           </ul>
           <ul className="flex items-center my-2">
-            <ImPriceTags className="w-6 h-6 mr-4"/>
+            <ImPriceTags className="w-6 h-6 mr-4" />
             <h1>Transaction</h1>
           </ul>
           <ul className="flex items-center my-2 ">
-            <LuCalendarClock className="w-6 h-6 mr-4"/>
+            <LuCalendarClock className="w-6 h-6 mr-4" />
             <h1 className="">Schedules</h1>
           </ul>
           <ul className="flex items-center my-2">
-            <BiUserCircle className="w-6 h-6 mr-4"/>
+            <BiUserCircle className="w-6 h-6 mr-4" />
             <h1>Users</h1>
           </ul>
           <ul className="flex items-center my-2">
-            <LuSettings  className="w-6 h-6 mr-4"/>
+            <LuSettings className="w-6 h-6 mr-4" />
             <h1>Settings</h1>
           </ul>
-          
         </div>
       </div>
       <div className="dash-nav">
