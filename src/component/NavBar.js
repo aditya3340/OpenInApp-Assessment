@@ -32,7 +32,7 @@ const NavBar = () => {
             height={32}
             id="userImage"
             alt="user"
-            className="rounded-full mx-2 border-2 border-sky-600"
+            className="rounded-full mx-2 "
             onClick={() => setFlage((prev) => !prev)}
           />
         </div>

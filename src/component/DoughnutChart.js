@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
@@ -25,7 +26,7 @@ const DoughnutChart = () => {
           <h3 className="font-bold text-2xl">Top Products</h3>
         </div>
         <div className="flex p-2  justify-between  m-auto">
-          <div className="max-w-[200px] lg:max-w-[200px] ">
+          <div className="max-w-[150px] lg:max-w-[200px] ">
             <Doughnut data={data}  />
           </div>
           <div className=" flex flex-col justify-evenly items-start ml-4 w-full text-xs md:text-base">

@@ -1,8 +1,41 @@
-import React, { useState } from "react";
+import useUser from "@/hooks/useUser";
+import React, { useCallback, useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 
 const UserAdd = ({ handleClick }) => {
   const [nextForm, setNextForm] = useState(false);
+
+  const person = useUser();
+
+  // const [form, setForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   phone: "",
+  //   instagramLink: "",
+  //   youtubeLink: "",
+  // });
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [insta, setInsta] = useState("");
+  const [youtube, setYoutube] = useState("");
+
+  // const handleForm = (e) => {
+  //   setForm((prev) => {
+  //     return { ...prev, [e.target.name]: e.target.value };
+  //   });
+  // };
+
+  const handleSubmit = useCallback(() => {
+    person.addName(name);
+    person.addEmail(email);
+    person.addPhone(phone);
+    person.addInsta(insta);
+    person.addYoutube(youtube);
+
+    person.onOpen()
+  }, [person, name,email,phone,insta,youtube]);
 
   return (
     <div className="fixed top-0 left-0 w-[100%] min-h-[100vh] z-40 bg-black/50 flex justify-center items-center">
@@ -25,7 +58,7 @@ const UserAdd = ({ handleClick }) => {
             } `}
             onClick={() => setNextForm(false)}
           >
-            <h1>basic</h1>
+            <h1>Basic</h1>
           </div>
           <div
             className={`text-center w-full p-2 cursor-pointer font-bold ${
@@ -53,7 +86,10 @@ const UserAdd = ({ handleClick }) => {
                     placeholder="eg. Aditya"
                     type="text"
                     id="name"
+                    name="name"
+                    value={name}
                     className="w-full border border-zinc-300 p-1 px-4  rounded mt-2"
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
 
@@ -66,7 +102,10 @@ const UserAdd = ({ handleClick }) => {
                     placeholder="eg. 1125@gmail.com"
                     id="email"
                     type="text"
+                    name="email"
+                    value={email}
                     className="w-full p-1 px-4 border border-zinc-300 rounded mt-2"
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
 
@@ -79,7 +118,10 @@ const UserAdd = ({ handleClick }) => {
                     type="number"
                     placeholder="eg. 911 251 2124"
                     id="phone"
+                    name="phone"
+                    value={phone}
                     className="w-full p-1 px-4 border border-zinc-300 rounded mt-2"
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
               </form>
@@ -108,8 +150,10 @@ const UserAdd = ({ handleClick }) => {
                 <input
                   placeholder="eg. instagram.com/username"
                   type="text"
-                  id="name"
+                  name="instagramLink"
+                  value={insta}
                   className="w-full border border-zinc-300 p-1 px-4  rounded mt-2"
+                  onChange={(e) => setInsta(e.target.value)}
                 />
               </div>
 
@@ -121,9 +165,11 @@ const UserAdd = ({ handleClick }) => {
                 <br />
                 <input
                   placeholder="eg. youtube.com/username"
-                  id="email"
+                  name="youtubeLink"
+                  value={youtube}
                   type="text"
                   className="w-full p-1 px-4 border border-zinc-300 rounded mt-2"
+                  onChange={(e) => setYoutube(e.target.value)}
                 />
               </div>
             </form>
@@ -138,7 +184,10 @@ const UserAdd = ({ handleClick }) => {
               </button>
 
               <button
-                onClick={handleClick}
+                onClick={() => {
+                  handleClick();
+                  handleSubmit();
+                }}
                 type="text"
                 className="bg-[#3E84F8] text-white font-semibold py-1 px-4 text-sm rounded-md "
               >

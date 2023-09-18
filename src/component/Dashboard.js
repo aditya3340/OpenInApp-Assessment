@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import SideBar from "./SideBar";
@@ -12,7 +13,7 @@ const Dashboard = () => {
   return (
     <div className="flex w-full h-[100vh] justify-between ">
       <SideBar />
-      <div className="w-screen lg:ml-10 ">
+      <div className="  lg:ml-[19%] w-screen p-4 ">
         <NavBar />
         <Cards />
        <BarChart/>

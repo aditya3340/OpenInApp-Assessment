@@ -33,7 +33,7 @@ const BarChart = () => {
       id="mainGraphContainer"
       className="flex flex-col p-5  rounded-2xl justify-center items-center max-w-[85%] md:max-w-[98%]  m-auto  my-5 border-2 drop-shadow bg-white "
     >
-      <div className=" max-h-[350px] pb-6 w-full m-auto mb-3">
+      <div className=" max-h-[250px] md:max-h-[350px] pb-6 w-full m-auto mb-3">
         <div className="flex justify-between items-center">
           <div className="flex-[7]">
             <h3 className="font-bold text-2xl">Activities</h3>
