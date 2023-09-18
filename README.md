@@ -6,19 +6,19 @@ https://assign-sand.vercel.app/
 <video src="./public/20230918-0632-39.9706080.mp4" controls title="Title"></video>
 
 ## Screenshots of App
-![Alt text](./public/image.png)
-![Alt text](./public/image-1.png)
-![Alt text](./public/image-2.png)
-![Alt text](./public/popup-1.png)
-![Alt text](./public/popup-2.png)
+![Alt text](./public/designs/image.png)
+![Alt text](./public/designs/image-1.png)
+![Alt text](./public/designs/image-2.png)
+![Alt text](./public/designs/popup-1.png)
+![Alt text](./public/designs/popup-2.png)
 
 ## Responsive 
-![Alt text](./public/image-3.png)
-![Alt text](./public/image-4.png)
-![Alt text](./public/image-5.png)
-![Alt text](./public/image-6.png)
-![Alt text](./public/image-7.png)
-![Alt text](./public/res.png)
+![Alt text](./public/designs/image-3.png)
+![Alt text](./public/designs/image-4.png)
+![Alt text](./public/designs/image-5.png)
+![Alt text](./public/designs/image-6.png)
+![Alt text](./public/designs/image-7.png)
+![Alt text](./public/designs/res.png)
 
 
 ## Getting Started
